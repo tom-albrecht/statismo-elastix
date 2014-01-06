@@ -21,7 +21,7 @@ Installation
 statismo-elastix is built as an elastix "user component" from within the cmake build of elastix. 
 To point cmake to the code, you need to add the statismo-elastix directory to the cmake variable 
 ELASTIX_USER_COMPONENT_DIRS. If you already have other user components, the variable can hold
-multiple directories, separated by a semicolon (;).
+multiple directories, separated by a semicolon.
 
 After running cmake's configure routine once, cmake will demand the location of the statismo 
 directory. This is the installation directory of your statismo library. After this is specified,
