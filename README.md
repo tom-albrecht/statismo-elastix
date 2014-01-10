@@ -7,7 +7,7 @@ Prerequisites
 ------------
 
 You need to download and compile elastix and statismo. Both necessitate an installation of ITK.
-We tested statismo-elastix with elastix 4.6 and statismo 0.9.
+We tested statismo-elastix with elastix 4.6 and statismo 0.8.1, the current master. 
 
 You need a statistical deformation model in statismo's hdf5 file format. While it is possible to 
 build this model using registration results generated with elastix, this statismo-elastix software
