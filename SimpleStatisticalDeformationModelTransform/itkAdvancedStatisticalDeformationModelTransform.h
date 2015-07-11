@@ -38,7 +38,7 @@
 
 #include <iostream>
 #include "itkAdvancedStatisticalModelTransformBase.h"
-#include "itkVectorImageRepresenter.h"
+#include "itkStandardImageRepresenter.h"
 #include "itkVectorLinearInterpolateImageFunction.h"
 #include "itkStatisticalModel.h"
 #include "itkImage.h"
