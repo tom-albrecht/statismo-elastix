@@ -86,8 +86,8 @@ namespace elastix
     this->GetConfiguration()->ReadParameter( m_StatisticalModelName,
       "StatisticalModelName", 0);
     typename StatisticalModelType::Pointer statisticalModel = StatisticalModelType::New();
-
-    statisticalModel->Load(m_StatisticalModelName.c_str());
+	typename RepresenterType::Pointer representer = RepresenterType::New();
+	statisticalModel->Load(representer,m_StatisticalModelName.c_str());
 
     unsigned usedNumberOfStatisticalModelCoefficients = 0;
     this->GetConfiguration()->ReadParameter( usedNumberOfStatisticalModelCoefficients,  "UsedNumberOfStatisticalModelCoefficients", 0, false);
@@ -96,7 +96,7 @@ namespace elastix
     	this->m_StatisticalDeformationModelTransform->SetUsedNumberOfCoefficients(usedNumberOfStatisticalModelCoefficients);
     }
 
-    bool automaticTransformInitialization = false;
+    bool automaticTransformInitialization = false;		 
 
 		this->m_StatisticalModel = statisticalModel;
 
