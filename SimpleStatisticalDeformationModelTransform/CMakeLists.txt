@@ -7,4 +7,4 @@ ADD_ELXCOMPONENT( SimpleStatisticalDeformationModelTransformElastix
  elxStatisticalDeformationModelTransform.h
  elxStatisticalDeformationModelTransform.hxx
  elxStatisticalDeformationModelTransform.cxx )
-TARGET_LINK_LIBRARIES( SimpleStatisticalDeformationModelTransformElastix statismo_core)
+TARGET_LINK_LIBRARIES( SimpleStatisticalDeformationModelTransformElastix statismo_core ${Boost_LIBRARIES})
